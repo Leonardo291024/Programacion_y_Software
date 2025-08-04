@@ -7,18 +7,16 @@ número. Si el número ingresado resulta ser un par, se deberá mostrar lo sigui
 #include<stdio.h>
 
 int main(){
-    int numeros[10] = {5,3,96,7,3,4,5,8,6,10};
-    int i;
+    int numero;
 
-    for(i = 0; i < 10; i++){
-        if(numeros[i] %2 == 0){
-            printf("El numero %d es PAR \n", numeros[i]);
-        }else{
-             printf("El numero %d es IMPAR \n", numeros[i]);
-        }
+    printf("Digita un valor: ");
+    scanf("%i", &numero);
+   
+    if(numero %2 == 0){
+        printf("El numero %i es PAR \n", numero);
+    }else{
+        printf("El numero %i es IMPAR \n", numero);
     }
-
-    //printf("\n");
 
     return 0;
 }
